@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة الكتب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .book {
+            width: 250px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+     <style>
+        .button-container {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .hidden-buttons {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #f9f9f9;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+        }
+    
+        .button-container:hover .hidden-buttons {
+          display: block;
+        }
+      </style>
+
+    <link rel="stylesheet" href="style.css">    
+</head> 
+<body>
+    <header>
+        <h1>مكتبة الكتب</h1>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="ابحث هنا">
+        <button onclick="performSearch()">ابحث</button>
+    </div>
+    <div id="search-results">
+        <!-- سيظهر هنا نتائج البحث -->
+    </div>
+
+    <main>
+
+       
+        <div class="button-container">
+            <button><div class="book">
+                <img src="as/th (1).jfif" alt="Book Cover">
+                <h3>ارض زيكولا</h3>
+                <p>مؤلف: عمرو عبدالحميد</p>
+                <p>سنة النشر: 2010</p>
+            </div>
+    </button>
+            <div class="hidden-buttons">
+              <button><a href="">تحميل</a></button>
+              <button><a href="https://docs.google.com/viewerng/viewer?hl=ar&t=38&url=https://www.alarabimag.com/books/22375.pdf">قراءة</a></button>
+            </div>
+          </div>
+        
+        <div class="book">
+            <img src="as/th (2).jfif" alt="Book Cover">
+            <h3>اماريتا</h3>
+            <p>مؤلف: عمرو عبدالحميد</p>
+            <p>سنة النشر: 2018</p>
+        </div>
+        <div class="book">
+            <img src="as/وادي-الذئاب-المنسية-أرض-زيكولا-3-26775-200x300-jpg.jpg" alt="Book Cover">
+            <h3>وادي الذئاب المنسية</h3>
+            <p>مؤلف: عمرو عبدالحميد</p>
+            <p>سنة النشر: 2023</p>
+        </div>
+        <div class="book">
+            <img src="as/42973961._UY200_.jpg" height="50%" alt="Book Cover">
+            <h3>قواعد جارتين</h3>
+            <p>مؤلف: عمرو عبدالحميد</p>
+            <p>سنة النشر: 2018</p>
+        </div>
+        <!-- يمكنك إضافة المزيد من الكتب هنا -->
+    </main>
+    <a href="ard.html">s</a>
+</body>
+</html>
